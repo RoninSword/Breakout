@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brick Breaker</title>
+  <link rel="stylesheet" href="breakOut.css">
+  
+
+</head>
+
+<body>
+
+
+
+
+
+  <div id="breakoutArea">
+    <h1>Welcome to Brick Breaks!</h1>
+    <button class="accordion"><h2>Settings/Instructions</h2></button>
+    <div class="panel">
+      <div id="controls">
+        <div id=buttons>
+          <input class="buttonCtn" type="button" value="Start" id="startBreak">
+          <input class="buttonCtn" type="button" onClick="window.location.reload();" value="Reload" id="reload">
+          Lives: <input type="number" id="lives" value="1" placeholder="lives" min="1">
+          Speed: <input type="number" id="speed" value="2" placeholder="speed" min="1">
+          <form>
+            <fieldset>
+              <legend>Instructions:</legend>
+              <p>Use the arrow keys to move the paddle!</p>
+              <p> Use the Z key (if desktop) or tap(if mobile) to change the color of the paddle! <br> You can only pop bricks that match your color!</p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <h3 id="score"></h3>
+
+    <div id="gameArea">
+      <canvas id="myCanvas" width="480" height="450"></canvas>
+    </div>
+    <div id="instructionsLegend">
+
+    </div>
+    <audio id="pop">
+      <source src="pop.wav" type="audio/wav"></audio>
+
+  </div>
+
+
+
+</body>
+</div>
+<script src="breakout.js"></script>
+
+</html>
